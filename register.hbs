@@ -1,0 +1,801 @@
+<div class="other--header">
+    <div class="logo">
+
+    </div>
+    <div class="logo-mob"></div>
+    <div class="cat-btn">
+        <button class="-rc -nz">
+
+            Каталог
+            <div class="arrow-ico"></div>
+        </button>
+    </div>
+    <div class="autocomplete">
+        <form action-xhr="https://amp.dev/documentation/examples/api/echo" class="-t_" id="searchForm" method="POST"
+            on="submit:AMP.setState({ query: throttledValue }),searchResult.focus,searchList.changeToLayoutContainer"
+            target="_top" novalidate="">
+
+            <amp-autocomplete class="-tj " filter="substring" min-characters="1"
+                on="select:AMP.setState({ query: event.value })" submit-on-enter="false"
+                src="https://amp.dev/search/autosuggest" role="combobox" aria-haspopup="listbox" aria-expanded="false"
+                aria-owns="18_AMP_content_">
+                <div class="-flx-acomplete">
+                    <input id="searchInput" class="-tq" name="q" placeholder="Куда поедем?"
+                        on="input-throttled:AMP.setState({ throttledValue: event.value })"
+                        [value]="query == null ? '' : query" required="" dir="auto" aria-autocomplete="both"
+                        role="textbox" aria-controls="18_AMP_content_" aria-multiline="false" autocomplete="off"
+                        value="" aria-expanded="false">
+                    <!-- TODO style buttons on hover and click -->
+                    <button class="search-btn" type="submit" name="search-submit" [disabled]="!throttledValue">
+                        Поиск
+                    </button>
+                    <div role="listbox" id="18_AMP_content_" hidden>
+
+                    </div>
+                </div>
+            </amp-autocomplete>
+
+        </form>
+
+
+    </div>
+    <div class="mobile-search" id="searchTriggerOpen" role="button" aria-label="Search" tabindex="0"
+        on="tap:searchLightbox">
+        <div class="search-ico"></div>
+    </div>
+    <div class="bkt-nav">
+        <button class="-rc -nz">
+            <div class="bag-ico"></div>
+            Заказы
+        </button>
+
+    </div>
+    <div class="login">
+        <button class="-rc -nz">
+            <div class="user-ico"></div>
+            Вход
+        </button>
+
+    </div>
+    <div class="hamburg">
+        <label class="ap-o-burger-menu-label "
+            on="tap:AMP.setState({mainmenuopen: !mainmenuopen, noScrollState: !noScrollState})"
+            [class]="'ap-o-burger-menu-label ' + (mainmenuopen ? 'mainmenuopen ' : '')" for="burger-menu" tabindex="0"
+            role="button" aria-label="Burger Menu">
+            <button class="-rc -nz">
+                <div class="hamburg-ico"></div>
+            </button>
+        </label>
+
+    </div>
+
+</div>
+
+<div class="-subhdr">
+    <div class="-hot -nqq" role="button" tabindex="0">
+        <div class="-fire"></div>
+        <p>Горячие предожения</p>
+        <ul class="-rx">
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Бугульма</div>
+                        <div class="-rj">Вкусные вяленые топинамбуры здесь!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/guides-and-tutorials/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Туды &amp; в качель!</div>
+                        <div class="-rj">Все качели подмосковья!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/components/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Вкусный Екибастуз</div>
+                        <div class="-rj">Всратая кухня Екибастуса</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/examples/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Козлинский двор</div>
+                        <div class="-rj">Козлы разной масти и роста</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz "
+                    href="https://amp.dev/documentation/courses/?format=websites&amp;level=beginner">
+
+                    <div class="-ie">
+                        <div class="-r_">Ну и прочая хрень</div>
+                        <div class="-rj">Как то так...</div>
+                    </div>
+                </a> </li>
+
+        </ul>
+    </div>
+    <div class="-activities -nqq">
+        <div class="mountains"></div>
+        <p>Туры выходног дня</p>
+        <ul class="-rx">
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Бугульма</div>
+                        <div class="-rj">Вкусные вяленые топинамбуры здесь!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/guides-and-tutorials/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Туды &amp; в качель!</div>
+                        <div class="-rj">Все качели подмосковья!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/components/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Вкусный Екибастуз</div>
+                        <div class="-rj">Всратая кухня Екибастуса</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/examples/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Козлинский двор</div>
+                        <div class="-rj">Козлы разной масти и роста</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz "
+                    href="https://amp.dev/documentation/courses/?format=websites&amp;level=beginner">
+
+                    <div class="-ie">
+                        <div class="-r_">Ну и прочая хрень</div>
+                        <div class="-rj">Как то так...</div>
+                    </div>
+                </a> </li>
+
+        </ul>
+    </div>
+    <div class="-tourizm -nqq">
+        <div class="arrows"></div>
+        <p>Экскурсии</p>
+        <ul class="-rx">
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Бугульма</div>
+                        <div class="-rj">Вкусные вяленые топинамбуры здесь!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/guides-and-tutorials/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Туды &amp; в качель!</div>
+                        <div class="-rj">Все качели подмосковья!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/components/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Вкусный Екибастуз</div>
+                        <div class="-rj">Всратая кухня Екибастуса</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/examples/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Козлинский двор</div>
+                        <div class="-rj">Козлы разной масти и роста</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz "
+                    href="https://amp.dev/documentation/courses/?format=websites&amp;level=beginner">
+
+                    <div class="-ie">
+                        <div class="-r_">Ну и прочая хрень</div>
+                        <div class="-rj">Как то так...</div>
+                    </div>
+                </a> </li>
+
+        </ul>
+    </div>
+    <div class="-mountains -nqq">
+        <div class="bike"></div>
+        <p>Активный отдых</p>
+        <ul class="-rx">
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Бугульма</div>
+                        <div class="-rj">Вкусные вяленые топинамбуры здесь!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/guides-and-tutorials/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Туды &amp; в качель!</div>
+                        <div class="-rj">Все качели подмосковья!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/components/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Вкусный Екибастуз</div>
+                        <div class="-rj">Всратая кухня Екибастуса</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/examples/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Козлинский двор</div>
+                        <div class="-rj">Козлы разной масти и роста</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz "
+                    href="https://amp.dev/documentation/courses/?format=websites&amp;level=beginner">
+
+                    <div class="-ie">
+                        <div class="-r_">Ну и прочая хрень</div>
+                        <div class="-rj">Как то так...</div>
+                    </div>
+                </a> </li>
+
+        </ul>
+    </div>
+    <div class="-other -nqq">
+        <div class="city"></div>
+        <p>Курорты</p>
+        <ul class="-rx">
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Бугульма</div>
+                        <div class="-rj">Вкусные вяленые топинамбуры здесь!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/guides-and-tutorials/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Туды &amp; в качель!</div>
+                        <div class="-rj">Все качели подмосковья!</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/components/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Вкусный Екибастуз</div>
+                        <div class="-rj">Всратая кухня Екибастуса</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz " href="https://amp.dev/documentation/examples/?format=websites">
+
+                    <div class="-ie">
+                        <div class="-r_">Козлинский двор</div>
+                        <div class="-rj">Козлы разной масти и роста</div>
+                    </div>
+                </a> </li>
+            <li class="-rq"> <a class="-rz "
+                    href="https://amp.dev/documentation/courses/?format=websites&amp;level=beginner">
+
+                    <div class="-ie">
+                        <div class="-r_">Ну и прочая хрень</div>
+                        <div class="-rj">Как то так...</div>
+                    </div>
+                </a> </li>
+
+        </ul>
+    </div>
+</div>
+<nav class="burger-menu" [class]="mainmenuopen ? 'burger-menu mainmenuopen' : 'burger-menu'">
+    <ul class="-nz">
+        <li class="-re">
+            <label class="ap-o-burger-menu-link -ru "> Горячие предложения
+
+            </label>
+            <input class="-rt" type="checkbox" aria-label="Горячие предложения">
+            <span class="nav-icon"> <svg class="ap-a-ico">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down-solid">
+                        <svg id="angle-down-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <path
+                                d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z">
+                            </path>
+                        </svg>
+                    </use>
+                </svg>
+            </span>
+            <ul class="-nz">
+                <li class="-re">
+                    <a href="#" class="burger-menu-link -rh">Бугульминские тапинамбуры</a>
+                </li>
+                <li class="-re">
+                    <a href="#" class="burger-menu-link -rh">Сретенские чангачкуки</a>
+                </li>
+                <li class="-re">
+                    <a href="#" class="burger-menu-link -rh">Биберы из Бибирева</a>
+                </li>
+                <li class="-re">
+                    <a href="#" class="burger-menu-link -rh">Тарковский бинт</a>
+                </li>
+                <li class="-re">
+                    <a href="#" class="burger-menu-link -rh">И всякое такое...</a>
+                </li>
+            </ul>
+
+        </li>
+        <li class="-re">
+            <label class="ap-o-burger-menu-link -ru "> Туры выходного дня </label>
+            <input class="-rt" type="checkbox" aria-label="Туры выходного дня">
+            <span class="nav-icon"> <svg class="ap-a-ico">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down-solid">
+                        <svg id="angle-down-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <path
+                                d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z">
+                            </path>
+                        </svg>
+                    </use>
+                </svg>
+            </span>
+
+        </li>
+        <li class="-re">
+            <label class="ap-o-burger-menu-link -ru "> Экскурсии </label>
+            <input class="-rt" type="checkbox" aria-label="Экскурсии">
+            <span class="nav-icon"> <svg class="ap-a-ico">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down-solid">
+                        <svg id="angle-down-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <path
+                                d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z">
+                            </path>
+                        </svg>
+                    </use>
+                </svg>
+
+        </li>
+        <li class="-re">
+            <label class="ap-o-burger-menu-link -ru "> Активный отдых </label>
+            <input class="-rt" type="checkbox" aria-label="Активный отдых">
+            <span class="nav-icon"> <svg class="ap-a-ico">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down-solid">
+                        <svg id="angle-down-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <path
+                                d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z">
+                            </path>
+                        </svg>
+                    </use>
+                </svg>
+
+        </li>
+        <li class="-re">
+            <label class="ap-o-burger-menu-link -ru "> Курорты Казахстана </label>
+            <input class="-rt" type="checkbox" aria-label="Курорты Казахстана">
+            <span class="nav-icon"> <svg class="ap-a-ico">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down-solid">
+                        <svg id="angle-down-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <path
+                                d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z">
+                            </path>
+                        </svg>
+                    </use>
+                </svg>
+
+        </li>
+    </ul>
+</nav>
+<!-- </div> -->
+
+<amp-lightbox id="searchLightbox" layout="nodisplay" scrollable class="-tw">
+
+    <div class="-tx" role="button" tabindex="0" on="tap:searchLightbox.close">
+    </div>
+    <div class="-tk">
+        <div class="-rn" on="tap:searchLightbox.close,AMP.setState({clear: true, query: null})" role="button"
+            tabindex="0">
+            <div class="ap-a-ico -rr">
+                <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close">
+                        <svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <path
+                                d="M39.503 32l22.963-22.963c2.046-2.046 2.046-5.457 0-7.503s-5.456-2.046-7.503 0l-22.963 22.963-22.963-22.963c-2.046-2.046-5.457-2.046-7.503 0s-2.046 5.457 0 7.503l22.963 22.963-22.963 22.963c-2.046 2.046-2.046 5.456 0 7.503s5.457 2.046 7.503 0l22.963-22.963 22.963 22.963c2.046 2.046 5.456 2.046 7.503 0s2.046-5.456 0-7.503l-22.963-22.963z">
+                            </path>
+                        </svg>
+                    </use>
+                </svg>
+            </div>
+        </div>
+        <div class="ap-o-search-field">
+            <form action-xhr="https://amp.dev/documentation/examples/api/echo" class="-t_" id="searchForm" method="POST"
+                on="submit:AMP.setState({ query: throttledValue }),searchResult.focus,searchList.changeToLayoutContainer"
+                target="_top" novalidate="">
+                <amp-autocomplete class="-tj " filter="substring" min-characters="1"
+                    on="select:AMP.setState({ query: event.value })" submit-on-enter="false"
+                    src="https://amp.dev/search/autosuggest" role="combobox" aria-haspopup="listbox"
+                    aria-expanded="false" aria-owns="18_AMP_content_">
+
+                    <input id="searchInput" class="-tq" name="q" placeholder="Куда поедем?"
+                        on="input-throttled:AMP.setState({ throttledValue: event.value })"
+                        [value]="query == null ? '' : query" required="" dir="auto" aria-autocomplete="both"
+                        role="textbox" aria-controls="18_AMP_content_" aria-multiline="false" autocomplete="off"
+                        value="" aria-expanded="false">
+
+                    <button class="-ne" type="submit" name="search-submit" [disabled]="!throttledValue" disabled>
+                        Search
+                    </button>
+                    <div role="listbox" id="18_AMP_content_" hidden>
+
+                    </div>
+                </amp-autocomplete>
+            </form>
+            <div class="-nt" id="searchResult" tabindex="-1">
+                <amp-state id="search" src="https://amp.dev/search/do?q=amp-form&amp;locale=en"
+                    [src]="query == null || clear ? 'https://amp.dev/search/highlights?locale=en' : 'https://amp.dev/search/do?q=' + encodeURIComponent(query) + '&amp;locale=en'"
+                    hidden aria-hidden="true"></amp-state>
+                <amp-list id="searchList" src="https://amp.dev/search/do?q=amp-form&amp;locale=en&amp;page=2"
+                    [src]="query == null || clear ? 'https://amp.dev/search/highlights?locale=en' : 'https://amp.dev/search/do?q=' + encodeURIComponent(query) + '&amp;locale=en'"
+                    binding="no" items="." height="80vh" layout="fixed-height" load-more="auto"
+                    load-more-bookmark="nextUrl" reset-on-refresh="" single-item="">
+
+                    <template type="amp-mustache" id="searchResultTemplate">
+                        <div class="-nn"> {{^prevUrl}} {{#result.components.length}} <h4 class="-ns">
+                                {{#initial}}Important Components{{/initial}}{{^initial}}Components{{/initial}}</h4>
+                            {{/result.components.length}} {{/prevUrl}} {{#result.components}} <div class="-nr -no">
+                                <a class="-nu" href="{{url}}">
+                                    <h4 class="-nc">
+                                        {{#initial}}&lt;{{title}}&gt;{{/initial}}{{^initial}}{{title}}{{/initial}}
+                                    </h4>
+                                    <p class="-nh">{{description}}</p>
+                                </a> {{#exampleUrl}} <div class="-na"> <a
+                                        class="-nf ap-o-search-result-linklist-item-example -n"noreferrer href="{{exampleUrl}}">
+                                        <div class="ap-a-ico -i">
+                                            <svg>
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#internal">
+                                                    <svg id="internal" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 64 64">
+                                                        <path
+                                                            d="M43.16 10.18c-0.881-0.881-2.322-0.881-3.203 0s-0.881 2.322 0 3.203l16.335 16.335h-54.051c-1.281 0-2.242 1.041-2.242 2.242 0 1.281 0.961 2.322 2.242 2.322h54.051l-16.415 16.335c-0.881 0.881-0.881 2.322 0 3.203s2.322 0.881 3.203 0l20.259-20.259c0.881-0.881 0.881-2.322 0-3.203l-20.179-20.179z">
+                                                        </path>
+                                                    </svg>
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <span class="-r">Open example</span>
+                                    </a> {{#playgroundUrl}} <a class="-nf -nl -n" href="{{playgroundUrl}}"
+                                        target="_blank">
+                                        <div class="ap-a-ico -i">
+                                            <svg>
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#internal">
+                                                    <svg id="internal" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 64 64">
+                                                        <path
+                                                            d="M43.16 10.18c-0.881-0.881-2.322-0.881-3.203 0s-0.881 2.322 0 3.203l16.335 16.335h-54.051c-1.281 0-2.242 1.041-2.242 2.242 0 1.281 0.961 2.322 2.242 2.322h54.051l-16.415 16.335c-0.881 0.881-0.881 2.322 0 3.203s2.322 0.881 3.203 0l20.259-20.259c0.881-0.881 0.881-2.322 0-3.203l-20.179-20.179z">
+                                                        </path>
+                                                    </svg>
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <span class="-r">Open in playground</span>
+                                    </a> {{/playgroundUrl}} </div> {{/exampleUrl}} </div> {{/result.components}}
+                            {{^prevUrl}} {{#result.pages.length}} <h4 class="-ns">{{#initial}}Popular
+                                Articles{{/initial}}{{^initial}}Results{{/initial}}</h4> {{/result.pages.length}}
+                            {{/prevUrl}} {{#result.pages}} <div class="-nr"> <a class="-nu" href="{{url}}">
+                                    <h4 class="-nc">{{title}}</h4>
+                                    <p class="-nh">{{description}}</p>
+                                </a> </div> {{/result.pages}} {{#result.isTruncated}} <div class="-ni"> Although
+                                there are {{result.totalResults}} hits in total we cannot show more than 100. </div>
+                            {{/result.isTruncated}} </div>
+                    </template>
+                    <div class="-nd" fallback="">
+                        <h2 class="-nm">;(</h2>
+                        <h3 class="ap-o-search-result-error-headline">Something went wrong…</h3>
+                        <p class="-ng"> …while trying to load the search results.<br> We apologize for the
+                            inconvenience caused.<br> Please try again later. </p>
+                    </div>
+                    <div style>
+                        <div class="-nn">
+                            <h4 class="-ns">Горячие предложения</h4>
+                            <div class="-nr -no"> <a target="_top"
+                                    href="https://amp.dev/documentation/components/amp-form/" class="-nu">
+                                    <h4 class="-nc">amp-form</h4>
+                                    <p class="-nh">Allows you to create forms to submit input fields in an AMP
+                                        document.</p>
+                                </a>
+                                <div class="-na"> <a target="_top"
+                                        href="https://amp.dev/documentation/examples/components/amp-form/?format=websites"
+                                        class="-nf ap-o-search-result-linklist-item-example -n">
+                                        <div class="ap-a-ico -i"> <svg>
+                                                <use xlink:href="#internal" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                </use>
+                                            </svg> </div> <span class="-r">Open example</span>
+                                    </a> <a target="_blank"
+                                        href="https://playground.amp.dev/?url=https%3A%2F%2Fpreview.amp.dev%2Fdocumentation%2Fexamples%2Fcomponents%2Famp-form"
+                                        class="-nf -nl -n">
+                                        <div class="ap-a-ico -i"> <svg>
+                                                <use xlink:href="#internal" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                </use>
+                                            </svg> </div> <span class="-r">Open in playground</span>
+                                    </a> </div>
+                            </div>
+                            <div class="-nr -no"> <a target="_top"
+                                    href="https://amp.dev/documentation/components/amp-recaptcha-input/" class="-nu">
+                                    <h4 class="-nc">amp-recaptcha-input</h4>
+                                    <p class="-nh">Appends a reCAPTCHA v3 token to AMP form submissions.</p>
+                                </a>
+                                <div class="-na"> <a target="_top"
+                                        href="https://amp.dev/documentation/examples/components/amp-recaptcha-input/?format=websites"
+                                        class="-nf ap-o-search-result-linklist-item-example -n">
+                                        <div class="ap-a-ico -i"> <svg>
+                                                <use xlink:href="#internal" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                </use>
+                                            </svg> </div> <span class="-r">Open example</span>
+                                    </a> <a target="_blank"
+                                        href="https://playground.amp.dev/?url=https%3A%2F%2Fpreview.amp.dev%2Fdocumentation%2Fexamples%2Fcomponents%2Famp-recaptcha-input"
+                                        class="-nf -nl -n">
+                                        <div class="ap-a-ico -i"> <svg>
+                                                <use xlink:href="#internal" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                </use>
+                                            </svg> </div> <span class="-r">Open in playground</span>
+                                    </a> </div>
+                            </div>
+                            <h4 class="-ns">Results</h4>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/components/amp-form/" class="-nu">
+                                    <h4 class="-nc">Example: amp-form</h4>
+                                    <p class="-nh">The amp-form extension allows the usage of forms and input fields
+                                        in an AMP
+                                        document. amp-form allows HTTP and XHR (XMLHttpRequest) form submissions
+                                        .</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/components/amp-autocomplete/"
+                                    class="-nu">
+                                    <h4 class="-nc">Example: amp-autocomplete</h4>
+                                    <p class="-nh">An amp-autocomplete must always be nested in a form and have an
+                                        input field
+                                        specified with an input or textarea tag and a datasource. When a user types
+                                        into&nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/components/amp-analytics/" class="-nu">
+                                    <h4 class="-nc">Example: amp-analytics</h4>
+                                    <p class="-nh">Pageview; Anchor Clicks; Timer; Scrolling; AMP Carousel changes;
+                                        Form. This
+                                        sample demonstrates which events can be measured and&nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/guides-and-tutorials/learn/amp-caches-and-cors/amp-cors-requests/"
+                                    class="-nu">
+                                    <h4 class="-nc">CORS in AMP</h4>
+                                    <p class="-nh">AMP components that fetch dynamic data (e.g., amp-form, amp-list,
+                                        etc.) make
+                                        CORS requests to remote endpoints to retrieve the data. If your AMP
+                                        page&nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/components/amp-inputmask/" class="-nu">
+                                    <h4 class="-nc">Example: amp-inputmask</h4>
+                                    <p class="-nh">The amp-inputmask component enables input masks for form fields
+                                        in AMP
+                                        documents.</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/interactivity-dynamic-content/dynamically_updating_items_in_a_feed/"
+                                    class="-nu">
+                                    <h4 class="-nc">Example: Dynamically updating items in a feed</h4>
+                                    <p class="-nh">We also define a layout that allows us to have fixed card sizes,
+                                        to ensure form
+                                        submissions don't result in content jumps. &lt;style amp-custom&gt;
+                                        .amp-form-submit-
+                                        &nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/components/amp-recaptcha-input/"
+                                    class="-nu">
+                                    <h4 class="-nc">Example: amp-recaptcha-input</h4>
+                                    <p class="-nh">The amp-recaptcha-input component appends a reCAPTCHA v3 token to
+                                        AMP
+                                        form submissions.</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/guides-and-tutorials/learn/amp-actions-and-events/"
+                                    class="-nu">
+                                    <h4 class="-nc">Actions and events</h4>
+                                    <p class="-nh">The events that are supported depend on the element. The value
+                                        for the syntax is
+                                        a simple domain-specific language of the form: eventName:&nbsp;...</p>
+                                </a> </div>
+                        </div>
+                        <div class="-nn">
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/components/amp-selector/" class="-nu">
+                                    <h4 class="-nc">Example: amp-selector</h4>
+                                    <p class="-nh">This sample also demonstrates how to combine amp-selector with
+                                        forms ... &lt;
+                                        script async custom-element="amp-form"&nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/guides-and-tutorials/develop/login_requiring/"
+                                    class="-nu">
+                                    <h4 class="-nc">Create a login-requiring AMP page</h4>
+                                    <p class="-nh">You can implement a login flow with AMP by using the amp-access
+                                        component
+                                        combined with the amp-form component. TIP – To see a sample implementation,
+                                        &nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/guides-and-tutorials/learn/spec/amphtml/"
+                                    class="-nu">
+                                    <h4 class="-nc">AMP HTML Specification</h4>
+                                    <p class="-nh">By using the AMP format, content producers are making the content
+                                        in AMP files
+                                        available to be crawled (subject to robots.txt restrictions), cached, and
+                                        displayed
+                                        &nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top" href="https://amp.dev/documentation/examples/"
+                                    class="-nu">
+                                    <h4 class="-nc">AMP Websites Examples</h4>
+                                    <p class="-nh">Components. Create every content, layout and feature on your
+                                        website with an
+                                        AMP component. amp-autocomplete · amp-bind · amp-carousel ·
+                                        amp-form&nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/components/amp-mustache/" class="-nu">
+                                    <h4 class="-nc">Documentation: amp-mustache</h4>
+                                    <p class="-nh">This can happen when nesting two components that use templates,
+                                        e.g. amp-list
+                                        and amp-form . To workaround this, &lt;template&gt; elements can also be
+                                        referenced
+                                        &nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/e-commerce/checkout_flow/" class="-nu">
+                                    <h4 class="-nc">Example: Checkout Flow</h4>
+                                    <p class="-nh">We use quite a few components: amp-form for collecting and
+                                        submitting user
+                                        input. &lt;script async custom-&nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/interactivity-dynamic-content/conference_survey_email/"
+                                    class="-nu">
+                                    <h4 class="-nc">Example: Conference Survey Email</h4>
+                                    <p class="-nh">To make the survey, we use an amp-form with radio button input
+                                        fields. The
+                                        second step of the form, free text input, is hidden initially and gets
+                                        displayed after
+                                        the&nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://blog.amp.dev/2016/10/31/forms-now-supported-in-amp/" class="-nu">
+                                    <h4 class="-nc">Forms now supported in AMP – The AMP Blog</h4>
+                                    <p class="-nh">Oct 31, 2016 ... We've just launched support for forms in AMP
+                                        HTML. With the “amp-form”
+                                        extension, the &lt;form&gt; element and its related elements like
+                                        &lt;input&gt;&nbsp;...</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validation_errors/"
+                                    class="-nu">
+                                    <h4 class="-nc">AMP validation errors</h4>
+                                    <p class="-nh">AMP HTML tag and attribute errors. Mandatory tag missing. Code,
+                                        MANDATORY_TAG_MISSING. Format, "The mandatory tag '%1' is missing or
+                                        incorrect.</p>
+                                </a> </div>
+                            <div class="-nr"> <a target="_top"
+                                    href="https://amp.dev/documentation/examples/components/amp-date-picker/"
+                                    class="-nu">
+                                    <h4 class="-nc">Example: amp-date-picker</h4>
+                                    <p class="-nh">Include the amp-form component for creating forms. &lt;script
+                                        async custom-
+                                        element="amp-form"&nbsp;...</p>
+                                </a> </div>
+                        </div>
+                    </div>
+
+                </amp-list>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</amp-lightbox>
+<amp-script width="auto" height="900" defer script="clear-input">
+    <div class="register-area">
+        <h1>Регистрация</h1>
+
+
+
+        <form method="post" action-xhr="/user/register" custom-validation-reporting="show-all-on-submit"
+            data-amp-replace="CLIENT_ID" data-amp-addparams="clid=CLIENT_ID(myid)" target="_top">
+            <fieldset>
+                <label class="labeluser">
+                    <div class="eml-ico log-ico"></div>
+                    <input name="email" id="registration-username" type="text" placeholder="Введите email"
+                        class="input_style" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+                    <div class="cancel" role="button" id="clear-email" tabindex="0"></div>
+                </label>
+                <div class="notification-err">
+                    <span visible-when-invalid="valueMissing" validation-for="registration-username">Не указана
+                        электронная
+                        почта</span>
+                    <span visible-when-invalid="typeMismatch" validation-for="registration-username">Неверный формат
+                        адреса
+                        электронной почты</span>
+                    <span visible-when-invalid="patternMismatch" validation-for="registration-username">Неверный
+                        формат
+                        адреса
+                        электронной почты</span>
+                </div>
+                <label class="pwdlabel">
+                    <div class="pass-ico log-ico"></div>
+                    <input type="password" [type]="pwd" name="password" id="password" [value]="clearpass"
+                        class="input_style" placeholder="Пароль" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$"
+                        required>
+
+
+                    <div class="cancel" role="button" id="clear-password" tabindex="0"></div>
+                </label>
+                <div class="checkbox-container">
+
+                    <label class="control control-checkbox">
+
+                        <input type="checkbox" on="change:AMP.setState({pwd: pwd == 'text' ? 'password': 'text'})" />
+
+                        <div class="control_indicator"></div>
+                        Показать пароль
+                    </label>
+
+                </div>
+                <div class="notification-err -hhl">
+                    <span visible-when-invalid="patternMismatch" validation-for="password">Неверный формат
+                        пароля. Пароль должен содержать в сумме не менее 8 символов, среди них должны быть цифры,
+                        одна
+                        заглавная буква, без пробелов </span>
+                    <span visible-when-invalid="valueMissing" validation-for="password">Введите пароль</span>
+
+                </div>
+                <div class="submitlbl">
+                    <div class="-sb">
+                        <input type="submit" value="Зарегистрироваться" id="subscribe" class="subscribe_btn">
+                    </div>
+
+                </div>
+
+
+            </fieldset>
+        </form>
+        <div class="terms-container">
+            Регистрация означает согласие с
+            <a href="/main/agreement">пользовательским соглашением</a>
+
+            и
+            <a href="/main/privacy">политикой конфиденциальности</a>
+
+            портала Yarma.kz
+        </div>
+
+</amp-script>
+<script id="clear-input" type="text/plain" target="amp-script">
+        console.log('it works')
+        const cross = document.getElementById('clear-email');
+        const crosspass = document.getElementById('clear-password');
+        
+        cross.addEventListener('click', () => {
+            
+         const inpeml = document.getElementById('registration-username')   
+            inpeml.value = ''
+        });
+        crosspass.addEventListener('click', () => {
+            
+            const inppass = document.getElementById('password')   
+            inppass.value = ''
+           });
+
+      </script>
